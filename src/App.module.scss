@@ -1,0 +1,11 @@
+.top-flex {
+	display: flex;
+	gap: 1rem;
+	flex-direction: column;
+}
+
+@media screen and (min-width: 80rem) {
+	.top-flex {
+		flex-direction: row;
+	}
+}

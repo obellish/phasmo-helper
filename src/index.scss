@@ -1,0 +1,20 @@
+$background: #1b1b1b;
+$foreground: white;
+$accent: goldenrod;
+
+:root {
+	color-scheme: dark;
+	accent-color: $accent;
+	font-family: sans-serif;
+	background-color: $background;
+	color: $foreground;
+}
+
+h1 {
+	color: $accent;
+	font-family: 'October Crow', sans-serif;
+}
+
+fieldset {
+	border: 1px solid #333;
+}
