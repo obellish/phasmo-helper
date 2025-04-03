@@ -23,7 +23,7 @@
         },
         "ecmaVersion": 2018,
         "sourceType": "module",
-        "project": "./tsconfig.json"
+        "project": "./tsconfig.app.json"
     },
     "settings": {
         "react": {
@@ -42,6 +42,7 @@
     },
     "plugins": [
         "react",
+        "react-compiler",
         "react-hooks",
         "@typescript-eslint"
     ],
