@@ -5,9 +5,15 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
-		"build": "tsc -b && vite build",
-		"lint": "eslint .",
-		"preview": "vite preview"
+		"build": "tsc && vite build",
+		"build:mods": "node ./scripts/createModsData.cjs",
+		"preview": "vite preview",
+		"lint": "run-s 'lint:*'",
+		"lint:eslint": "eslint src --ext .js,.ts,.tsx",
+		"lint:prettier": "prettier src/**/*.{js,ts,tsx} --check",
+		"fix": "run-s 'fix:*'",
+		"fix:eslint": "yarn lint:eslint --fix",
+		"fix:prettier": "yarn lint:prettier --write"
 	},
 	"dependencies": {
 		"react": "^19.0.0",
